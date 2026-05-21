@@ -171,5 +171,14 @@ namespace MeinAdressBuchWPF
             PLZTextBox.Clear();
             TelefonnummerTextBox.Clear();
         }
+
+        private void LightModeRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Background = System.Windows.Media.Brushes.White;
+        }
+        private void DarkModeRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Background = System.Windows.Media.Brushes.DarkGray;
+        }
     }
 }

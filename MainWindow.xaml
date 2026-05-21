@@ -82,6 +82,10 @@
             <Button x:Name="LadenButton" Content="Laden" Width="110" Click="LadenButton_Click"/>
             <Button x:Name="SpeichernButton" Content="Speichern" Width="110" Click="SpeichernButton_Click"/>
             <TextBlock x:Name="StatusTextBlock" VerticalAlignment="Center" Margin="20 0 0 0" Text="Bereit."/>
+
+            <Label Content="ColorMode:" VerticalAlignment="Center" Margin="20 0 0 0"/>
+            <RadioButton x:Name="LightModeRadioButton" Content="Light" GroupName="ColorMode" Margin="5 0" Checked="LightModeRadioButton_Checked" IsChecked="True"/>
+            <RadioButton x:Name="DarkModeRadioButton" Content="Dark" GroupName="ColorMode" Margin="5 0" Checked="DarkModeRadioButton_Checked"/>
         </StackPanel>
     </Grid>
 </Window>
